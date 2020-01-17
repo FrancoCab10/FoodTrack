@@ -3,7 +3,7 @@ const wsUrl = 'http://localhost:1337';
 ////// FOOD /////
 async function createFood(name, color, icon) {
   try {
-    const resp = await axios.post(wsUrl + '/food', { name, color, icon});
+    const resp = await axios.post(wsUrl + '/food', { name, color, icon });
     createStock(resp.data.id);
     return resp.data;
   }

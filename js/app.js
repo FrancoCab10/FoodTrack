@@ -1,4 +1,4 @@
-const wsUrl = 'http://localhost:1337';
+const wsUrl = 'http://192.168.0.165:1337';
 
 ////// FOOD /////
 async function createFood(name, color, icon) {
